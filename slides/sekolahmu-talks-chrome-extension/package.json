@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "sekolahmu-talks-chrome-extension",
   "type": "module",
   "private": true,
   "scripts": {

@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  slides/example:
+  slides/sekolahmu-talks-chrome-extension:
     dependencies:
       '@slidev/cli':
         specifier: ^51.3.0
