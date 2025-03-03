@@ -1,105 +1,49 @@
 ---
 # You can also start simply with 'default'
 theme: seriph
-background: https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Understanding, Building, and Securing Your Own Browser Extensions
+title: Welcome to Slidev
 info: |
-  Understanding, Building, and Securing Your Own Browser Extensions by Jalu Wibowo Aji
+  ## Slidev Starter Template
+  Presentation slides for developers.
+
+  Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: fade-out
+transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 ---
 
-# Understanding, Building, and Securing Your Own Browser Extensions
+# Welcome to Slidev
+
+Presentation slides for developers
+
+<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
+  Press Space for next page <carbon:arrow-right />
+</div>
+
+<div class="abs-br m-6 text-xl">
+  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
+    <carbon:edit />
+  </button>
+  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+    <carbon:logo-github />
+  </a>
+</div>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
-transition: fade-out
-layout: two-cols
----
-
-# Jalu Wibowo Aji
-
-About Me:
-
-Software Engineer Frontend at [Sekolah.mu](https://sekolah.mu)
-
-<div class="list-none">
-  <li>
-    <a href="https://github.com/jarooda" target="_blank" class="slidev-btn">
-      <carbon:logo-github /> jarooda
-    </a>
-  </li>
-  <li>
-    <a href="https://t.me/jaluwibowo" target="_blank" class="slidev-btn">
-      <logos:telegram /> jaluwibowo
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/jarooda" target="_blank" class="slidev-btn">
-      <carbon:earth-southeast-asia /> jaluwibowo.id
-    </a>
-  </li>
-</div>
-
-
-::right::
-
-![pikachu-dance](https://i.gifer.com/Td9n.gif)
-
----
-layout: center
-class: text-center
-transition: fade-out
----
-
-# What Browser Extensions Do You Use?
-
-Please share in the chat.
-
-<img v-click src="https://www.wappalyzer.com/images/logo/mark-dark.png" alt="ext-1" class="absolute top-20 right-20">
-<img v-click src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/2048px-Google_Translate_logo.svg.png" alt="ext-2" class="absolute -rotate-30">
-<img v-click src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/2048px-MetaMask_Fox.svg.png" alt="ext-2" class="absolute top-10 left-80 rotate-20">
-<img v-click src="https://play-lh.googleusercontent.com/pmAmkZJWiWeq2a7eUpQVtBuJJeTqtK3W71M7m_LoNgIOuyaCCOvKkjdDRjfJDfTQjVQ" alt="ext-2" class="absolute bottom-20 right-70 rotate-10">
-
-<style>
-img {
-  width: 100px;
-  height: auto;
-}
-</style>
-
----
-layout: center
-class: text-center
-transition: fade-out
----
-
-# What is Browser Extension?
-
-A browser extension is a software module for customizing a web browser.
-
-<div class="abs-bl m-6 text-sm text-slate-500">
-  source: Wikipedia
-</div>
-
-<!--
-Browser Extension adalah software kecil yang menambahkan fungsionalitas atau fitur tambahan ke browser web. Extension ini dapat mengubah tampilan, perilaku, atau menambahkan alat baru ke dalam pengalaman browsing pengguna.
--->
-
----
-layout: center
-class: text-center
 transition: fade-out
 ---
 
