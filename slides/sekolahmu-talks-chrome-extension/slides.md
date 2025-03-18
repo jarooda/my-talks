@@ -197,27 +197,6 @@ Kontroversi Manifest V3:
 ❌ Ekstensi seperti uBlock Origin harus mencari cara baru agar tetap berfungsi dengan baik di Chrome.
 
 Namun, browser lain seperti Mozilla Firefox dan Microsoft Edge tetap mendukung Manifest V2 lebih lama untuk menjaga kompatibilitas.
-
--
-
-Mozilla Firefox memperkenalkan sistem add-ons, yang lebih fleksibel dan memberikan kontrol lebih kepada pengguna.
-🔹 Dibangun menggunakan XUL (XML User Interface Language).
-🔹 Memungkinkan pengguna untuk menginstal ekstensi yang lebih modular dan tidak mengganggu UI browser.
-🔹 Beberapa ekstensi populer saat itu:
-✅ Adblock Plus (pemblokiran iklan)
-✅ Firebug (alat debugging web sebelum DevTools ada)
-
--
-
-Pada tahun 2008, Google meluncurkan Chrome dengan sistem ekstensi yang lebih sederhana dan berbasis HTML, CSS, dan JavaScript.
-🔹 Chrome memperkenalkan Manifest V1, yang mengatur bagaimana ekstensi dibuat dan beroperasi.
-🔹 Banyak ekstensi mulai dikembangkan untuk meningkatkan pengalaman browsing.
-🔹 Contoh ekstensi populer di era ini:
-✅ LastPass (pengelola kata sandi)
-✅ Grammarly (pemeriksa tata bahasa)
-✅ Dark Reader (mode gelap untuk semua situs)
-
-Pada tahun 2013, Google memperkenalkan Manifest V2, yang lebih aman dan membatasi beberapa akses ekstensi untuk menghindari penyalahgunaan.
 -->
 
 ---
