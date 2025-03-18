@@ -51,16 +51,16 @@ jobs:
             pnpm --filter "./slides/$slide" run build --base "/$slide" -o "../../dist/$slide"
 
             # Create 404.html for redirection
-            cat <<EOF > "dist/$slide/404.html"
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-              <meta http-equiv="refresh" content="0; url='/$slide'" />
-            </head>
-            <body>
-              <p>Redirecting to <a href="/$slide">/$slide</a>...</p>
-            </body>
-            </html>
+            cat > "dist/$slide/404.html" << 'EOF'
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta http-equiv="refresh" content="0; url='/$slide'" />
+              </head>
+              <body>
+                <p>Redirecting to <a href="/$slide">/$slide</a>...</p>
+              </body>
+              </html>
             EOF
           done
 
