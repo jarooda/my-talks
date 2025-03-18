@@ -1,11 +1,11 @@
 ---
 # You can also start simply with 'default'
-theme: seriph
+theme: default
 background: https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 # some information about your slides (markdown enabled)
-title: Understanding, Building, and Securing Your Own Browser Extensions
+title: Extensions, Level Up Your Browser
 info: |
-  Understanding, Building, and Securing Your Own Browser Extensions by Jalu Wibowo Aji
+  Extensions, Level Up Your Browser by Jalu Wibowo Aji
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -17,45 +17,72 @@ transition: fade-out
 mdc: true
 ---
 
-# Understanding, Building, and Securing Your Own Browser Extensions
+# **Extensions: Level Up Your Browser**
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+- greeting
+- say thanks for coming
+- say the title and what will i deliver in this 50 minutes
 -->
 
 ---
 transition: fade-out
-layout: two-cols
+layout: center
 ---
 
-# Jalu Wibowo Aji
+# **About Me 👋**
 
-About Me:
+<div class="grid grid-cols-2 gap-16">
+  <div class="flex flex-col">
+  <h4 class="text-lg -mb-4">Jalu Wibowo Aji</h4>
+  <p class="text-sm text-gray-400">Software Engineer Frontend at <a href="https://sekolah.mu" target="_blank">Sekolah.mu</a></p>
 
-Software Engineer Frontend at [Sekolah.mu](https://sekolah.mu)
-
-<div class="list-none">
-  <li>
-    <a href="https://github.com/jarooda" target="_blank" class="slidev-btn">
-      <carbon:logo-github /> jarooda
-    </a>
-  </li>
-  <li>
-    <a href="https://t.me/jaluwibowo" target="_blank" class="slidev-btn">
-      <logos:telegram /> jaluwibowo
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/jarooda" target="_blank" class="slidev-btn">
-      <carbon:earth-southeast-asia /> jaluwibowo.id
-    </a>
-  </li>
+  <div class="list-none text-sm mt-4">
+    <li>
+      <a href="https://github.com/jarooda" target="_blank" class="slidev-btn">
+        <carbon:logo-github /> jarooda
+      </a>
+    </li>
+    <li>
+      <a href="https://t.me/jaluwibowo" target="_blank" class="slidev-btn">
+        <logos:telegram /> jaluwibowo
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/jarooda" target="_blank" class="slidev-btn">
+        <carbon:earth-southeast-asia /> jaluwibowo.id
+      </a>
+    </li>
+  </div>
+  </div>
+  <img src="https://i.gifer.com/Td9n.gif" alt="pika-hello" class="w-64" />
 </div>
 
+<!--
+intro, name, role and squad
 
-::right::
+want to collaborate: github
+want to chat: telegram
+-->
 
-![pikachu-dance](https://i.gifer.com/Td9n.gif)
+---
+layout: image
+image: https://img.devrant.com/devrant/rant/r_2467532_539j1.jpg
+backgroundSize: contain
+---
+
+<!--
+1. Tampilkan Gambar
+🎤 "Coba lihat gambar ini sebentar…" (Tunggu beberapa detik agar audiens melihat gambar dan bereaksi.)
+
+2. Buka dengan Relatable Statement
+🗣️ "Jadi, kita sebagai tech worker pasti nggak lepas dari yang namanya browsing ataupun Googling."
+
+3. Transisi ke Pertanyaan
+💡 "Dan teman-teman sendiri pasti sudah sering pakai…?" (Berhenti sejenak, biarkan audiens berpikir.)
+
+next slide ->
+-->
 
 ---
 layout: center
@@ -63,14 +90,14 @@ class: text-center
 transition: fade-out
 ---
 
-# What Browser Extensions Do You Use?
+# **What Browser Extensions Do You Use? 🧐**
 
 Please share in the chat.
 
 <img v-click src="https://www.wappalyzer.com/images/logo/mark-dark.png" alt="ext-1" class="absolute top-20 right-20">
 <img v-click src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/2048px-Google_Translate_logo.svg.png" alt="ext-2" class="absolute -rotate-30">
-<img v-click src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/2048px-MetaMask_Fox.svg.png" alt="ext-2" class="absolute top-10 left-80 rotate-20">
-<img v-click src="https://play-lh.googleusercontent.com/pmAmkZJWiWeq2a7eUpQVtBuJJeTqtK3W71M7m_LoNgIOuyaCCOvKkjdDRjfJDfTQjVQ" alt="ext-2" class="absolute bottom-20 right-70 rotate-10">
+<img v-click src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/2048px-MetaMask_Fox.svg.png" alt="ext-3" class="absolute top-10 left-80 rotate-20">
+<img v-click src="https://helpcenter.getadblock.com/hc/theming_assets/01HZKQWHKHZC9QF0KGBYQ6TP0W" alt="ext-4" class="absolute bottom-20 right-70 rotate-10">
 
 <style>
 img {
@@ -79,614 +106,409 @@ img {
 }
 </style>
 
+<!--
+👉 “…Browser extensions!”
+
+4. Ajakan Berinteraksi
+🤔 "Nah, kalau boleh tahu, teman-teman di sini biasanya pakai extension apa aja?" (Arahkan ke audiens untuk membuka diskusi.)
+
+-> curhat
+
+Kalau aku, yang paling kepakai itu "Google Meet Auto Disable Mic/Cam"
+-->
+
 ---
 layout: center
 class: text-center
 transition: fade-out
 ---
 
-# What is Browser Extension?
+# **What is Browser Extension? 🤔**
 
 A browser extension is a software module for customizing a web browser.
 
 <div class="abs-bl m-6 text-sm text-slate-500">
-  source: Wikipedia
+  source: <a href="https://en.wikipedia.org/wiki/Browser_extension" target="_blank">Wikipedia</a>
 </div>
 
 <!--
-Browser Extension adalah software kecil yang menambahkan fungsionalitas atau fitur tambahan ke browser web. Extension ini dapat mengubah tampilan, perilaku, atau menambahkan alat baru ke dalam pengalaman browsing pengguna.
+Browser Extension adalah software kecil yang menambahkan fungsionalitas atau fitur tambahan ke web browser. Extension ini dapat mengubah tampilan, perilaku, atau menambahkan alat baru ke dalam pengalaman browsing pengguna.
 -->
 
+
 ---
-layout: center
-class: text-center
 transition: fade-out
+layout: center
 ---
 
-# What is Slidev?
+<div class="flex justify-center items-center">
+  <img src="./assets/toolbar.jpg" alt="internet exporer toolbar" class="w-10/12" />
+</div>
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<div class="abs-bl m-6 text-sm text-slate-500">
+  source: <a href="https://www.reddit.com/r/nostalgia/comments/xbehqk/2000s_internet_explorer_spyware_toolbars/" target="_blank">Reddit</a>
+</div>
 
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
+Internet Toolbar hell, setiap install aplikasi kalau ga aware bisa nambah toolbar di internet explorer
 -->
 
 ---
-transition: slide-up
-level: 2
+transition: fade-out
+layout: center
 ---
 
-# Navigation
+# **History 🏛️**
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+<History class="mt-4" />
 
-## Keyboard Shortcuts
+<!--
+Setelah tahu apa itu browser extension, coba deh kita cek dulu sejarahnya
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+Pada awalnya, browser extension hadir dalam bentuk toolbar di Internet Explorer (IE). Contohnya:
+🔹 Google Toolbar (2000) – Memudahkan pencarian langsung dari browser.
+🔹 Yahoo! Toolbar, Ask Toolbar, Babylon Toolbar – Banyak toolbar ini sering kali disertakan dalam software lain dan sulit dihapus, menyebabkan pengalaman pengguna yang buruk.
+🔹 Masalah utama: Toolbar sering kali memperlambat browser dan memiliki celah keamanan.
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+-
+
+Mozilla Firefox memperkenalkan sistem add-ons, yang lebih fleksibel dan memberikan kontrol lebih kepada pengguna.
+🔹 Dibangun menggunakan XUL (XML User Interface Language) yang sekarang sudah menjadi legacy dan dibangun dengan WebExtensions API.
+🔹 Memungkinkan pengguna untuk menginstal ekstensi yang lebih modular dan tidak mengganggu UI browser.
+
+-
+
+Pada tahun 2008, Google meluncurkan Chrome dengan sistem ekstensi yang lebih sederhana dan berbasis HTML, CSS, dan JavaScript.
+🔹 Chrome memperkenalkan Manifest V1, yang mengatur bagaimana ekstensi dibuat dan beroperasi.
+🔹 Banyak ekstensi mulai dikembangkan untuk meningkatkan pengalaman browsing.
+
+Pada tahun 2013, Google memperkenalkan Manifest V2, yang lebih aman dan membatasi beberapa akses ekstensi untuk menghindari penyalahgunaan.
+
+-
+
+Google mengumumkan Manifest V3 (MV3) pada tahun 2020 sebagai pembaruan besar untuk meningkatkan keamanan dan privasi.
+🔹 Fokus utama:
+✅ Mengurangi akses ekstensi ke data pengguna.
+✅ Memblokir penggunaan background scripts yang berjalan terus-menerus.
+✅ Menggantikan WebRequest API dengan DeclarativeNetRequest, yang membatasi pemblokiran iklan seperti yang dilakukan oleh uBlock Origin.
+
+Kontroversi Manifest V3:
+❌ Beberapa pengembang dan komunitas open-source menilai perubahan ini membatasi fleksibilitas ekstensi, terutama untuk ekstensi pemblokiran iklan.
+❌ Ekstensi seperti uBlock Origin harus mencari cara baru agar tetap berfungsi dengan baik di Chrome.
+
+Namun, browser lain seperti Mozilla Firefox dan Microsoft Edge tetap mendukung Manifest V2 lebih lama untuk menjaga kompatibilitas.
+
+-
+
+Mozilla Firefox memperkenalkan sistem add-ons, yang lebih fleksibel dan memberikan kontrol lebih kepada pengguna.
+🔹 Dibangun menggunakan XUL (XML User Interface Language).
+🔹 Memungkinkan pengguna untuk menginstal ekstensi yang lebih modular dan tidak mengganggu UI browser.
+🔹 Beberapa ekstensi populer saat itu:
+✅ Adblock Plus (pemblokiran iklan)
+✅ Firebug (alat debugging web sebelum DevTools ada)
+
+-
+
+Pada tahun 2008, Google meluncurkan Chrome dengan sistem ekstensi yang lebih sederhana dan berbasis HTML, CSS, dan JavaScript.
+🔹 Chrome memperkenalkan Manifest V1, yang mengatur bagaimana ekstensi dibuat dan beroperasi.
+🔹 Banyak ekstensi mulai dikembangkan untuk meningkatkan pengalaman browsing.
+🔹 Contoh ekstensi populer di era ini:
+✅ LastPass (pengelola kata sandi)
+✅ Grammarly (pemeriksa tata bahasa)
+✅ Dark Reader (mode gelap untuk semua situs)
+
+Pada tahun 2013, Google memperkenalkan Manifest V2, yang lebih aman dan membatasi beberapa akses ekstensi untuk menghindari penyalahgunaan.
+-->
 
 ---
+transition: fade-out
+layout: center
+---
+
+# **Chrome Extensions Under The Hood 🥷**
+
+<!-- Pernah ga sih, pakai chrome extension terus kepikiran gimana cara buatnya? -->
+
+---
+layout: image
+image: assets/under-the-hood.jpg
+backgroundSize: contain
+---
+
+---
+transition: fade-out
+layout: center
+---
+
+# **manifest.json**
+
+The `manifest.json` file is the only file that every extension using WebExtension APIs must contain.
+
+<div class="w-full flex justify-center mt-8">
+  <img src="https://cdn-icons-png.flaticon.com/512/136/136525.png" alt="json-file" class="h-30" />
+</div>
+
+<!--
+Dengan manifest.json, kamu bisa menentukan metadata tentang extension yang kamu buat misal nama, logo dan deskripsi, kamu juga bisa menentukan aspek apa saja yang digunakan oleh extension yang kamu buat tersebut (such as background scripts, content scripts, and browser actions).
+-->
+
+---
+transition: fade-out
 layout: two-cols
-layoutClass: gap-16
 ---
 
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
-
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+pre.shiki-magic-move-container {
+  white-space: pre-wrap !important;
 }
 </style>
 
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+# **Inside manifest.json 📝**
 
 ````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
+```json {*|2-4|*}
+{
+  "manifest_version": 3,
+  "name": "Minimal Manifest",
+  "version": "1.0.0",
+  "description": "A basic example extension with only required keys",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
 }
 ```
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
+```json {*|10-19}
+{
+  "manifest_version": 3,
+  "name": "Run script automatically",
+  "version": "1.0.0",
+  "description": "Runs a script on www.example.com automatically when user installs the extension",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "http://*.example.com//"
       ]
     }
-  })
+  ]
 }
 ```
 
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
+```json {10-19|*}
+{
+  "manifest_version": 3,
+  "name": "Run script automatically",
+  "version": "1.0.0",
+  "description": "Runs a script on www.example.com automatically when user installs the extension",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }
-</script>
+```
+
+```json {*|9-20|19}
+{
+  "manifest_version": 3,
+  "name": "Click to run",
+  "version": "1.0.0",
+  "description": "Runs a script when the user clicks the action toolbar icon.",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_icon": {
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "permissions": ["scripting", "activeTab"]
+}
+```
+
+```json {*|10-18|*}
+{
+  "manifest_version": 3,
+  "name": "Popup extension that requests permissions",
+  "version": "1.0.0",
+  "description": "Extension that includes a popup and requests host permissions and storage permissions .",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://*.example.com/"
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
+```
+
+```json {*|10-13|*}
+{
+  "manifest_version": 3,
+  "name": "Side panel extension",
+  "version": "1.0.0",
+  "description": "Extension with a default side panel.",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": ["sidePanel"]
+}
 ```
 ````
 
----
+::right::
 
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
+<div class="flex justify-center items-center h-full p-4 relative">
+  <img v-click="[0, 3]" src="./assets/minimal_ext.png" class="absolute w-11/12">
+  <img v-click="[3, 7]" src="./assets/regist_ext.gif" class="absolute w-11/12">
+  <img v-click="[7, 11]" src="./assets/inject_ext.gif" class="absolute w-11/12">
+  <img v-click="[11, 15]" src="./assets/popup_ext.gif" class="absolute w-11/12">
+  <img v-click="[15, 19]" src="./assets/sidepanel_ext.gif" class="absolute w-11/12">
 </div>
 
 <!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
+Inside manifest.json the required keys are manifest version, name and version
 
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
+___
+
+Using content script we
+
+___
+
+Why content_scripts Won't Work for Click-to-Inject
+1️⃣ Content scripts are registered statically in manifest.json
+
+"content_scripts" run automatically on pages that match the "matches" filter.
+They cannot be injected dynamically when the user clicks the action icon.
+2️⃣ Content scripts don't have access to the chrome.* API
+
+Since content scripts run inside web pages, they cannot call chrome.scripting.executeScript to inject additional scripts.
+They also cannot detect toolbar icon clicks directly.
+3️⃣ No way to conditionally load scripts on user action
+
+Once defined in "content_scripts", they always run on matching pages, instead of only when clicking the icon.
 -->
 
 ---
-class: px-20
----
 
-# Themes
+# **Example of Chrome Extension Flow 🕸️**
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
+```mermaid {alt: 'A simple sequence diagram'}
 sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
+    participant User as User
+    participant Action as Action Icon (Popup)
+    participant Content as Content Script
+    participant Background as Background Service Worker
+    participant WebPage as Web Page
+
+    User->>Action: Click extension icon
+    Action->>Background: Send message (e.g., fetch data)
+    Background->>Action: Send response (e.g., API result)
+    
+    User->>WebPage: Interacts with the page
+    Content->>WebPage: Modify DOM (e.g., highlight text)
+    
+    Action->>Content: Send command (e.g., change style)
+    Content->>Background: Request additional data
+    Background->>Content: Respond with result
+
 ```
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+<!--
+Explanation of the Diagram:
+- User clicks the extension icon → Opens the popup.
+- Popup sends a message to the background script → Background script might fetch data from an API.
+- Background script sends data back to the popup → Displayed to the user.
+- User interacts with a webpage → Content script listens and modifies the DOM.
+- Popup sends commands to content script → For example, change page styling.
+- Content script communicates with background script → For tasks like API requests.
+-->
 
 ---
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
+transition: fade-out
 layout: center
-class: text-center
 ---
 
-# Learn More
+# **Demo 🚀**
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+Let's Play Around with Browser Extensions!
 
-<PoweredBySlidev mt-10 />
+<!--
+1. Creating simple extension to change the cursor when visiting sekolah.mu
+2. take a look at pndek.in extension
+3. Create extension that boost productivity with chatgpt, and trying to deploy at chrome webstore
+-->
+
+---
+transition: fade-out
+---
+
+# **Security Concerns**
+In Chrome Extensions  
+
+##### 1. **Excessive Permissions**
+- Some extensions request broad permissions (`<all_urls>`, `"activeTab"`, etc.), which can be exploited.
+- Always follow the **principle of least privilege**—grant only necessary permissions.
+
+##### 2. **Malicious Takeovers**
+- A legitimate extension can turn malicious if the developer account is hacked or sold. 
+- Always verify permissions and ownership before updating an extension.
+
+##### 3. **Data Leaks & Privacy Violations**
+- Extensions may track browsing behavior, log keystrokes, or send data to external servers.
+- Check the extension’s privacy policy and requested permissions before installing.
+
+<!--
+Example: *The Great Suspender* was hijacked and injected with malware.
+-->
+
+---
+
+# **Best Practices**  
+To Secure Chrome Extensions
+
+✅ Request only the permissions you **absolutely need**.  
+✅ Regularly **audit your extension’s code** and dependencies.  
+✅ Educate users to **review permissions** before installing.  
+✅ Keep developer accounts **secure** to prevent hijacking.  
+
+---
+transition: fade-out
+layout: center
+---
+
+# **Thank You 👋**
+
+Thanks for tuning in! Let’s chat and discuss!
