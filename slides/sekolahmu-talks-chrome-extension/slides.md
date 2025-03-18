@@ -142,7 +142,7 @@ layout: center
 ---
 
 <div class="flex justify-center items-center">
-  <img src="./assets/toolbar.jpg" alt="internet exporer toolbar" class="w-10/12" />
+  <img src="/toolbar.jpg" alt="internet exporer toolbar" class="w-10/12" />
 </div>
 
 <div class="abs-bl m-6 text-sm text-slate-500">
@@ -231,7 +231,7 @@ layout: center
 
 ---
 layout: image
-image: assets/under-the-hood.jpg
+image: /under-the-hood.jpg
 backgroundSize: contain
 ---
 
@@ -391,11 +391,11 @@ pre.shiki-magic-move-container {
 ::right::
 
 <div class="flex justify-center items-center h-full p-4 relative">
-  <img v-click="[0, 3]" src="./assets/minimal_ext.png" class="absolute w-11/12">
-  <img v-click="[3, 7]" src="./assets/regist_ext.gif" class="absolute w-11/12">
-  <img v-click="[7, 11]" src="./assets/inject_ext.gif" class="absolute w-11/12">
-  <img v-click="[11, 15]" src="./assets/popup_ext.gif" class="absolute w-11/12">
-  <img v-click="[15, 19]" src="./assets/sidepanel_ext.gif" class="absolute w-11/12">
+  <img v-click="[0, 3]" src="/minimal_ext.png" class="absolute w-11/12">
+  <img v-click="[3, 7]" src="/regist_ext.gif" class="absolute w-11/12">
+  <img v-click="[7, 11]" src="/inject_ext.gif" class="absolute w-11/12">
+  <img v-click="[11, 15]" src="/popup_ext.gif" class="absolute w-11/12">
+  <img v-click="[15, 19]" src="/sidepanel_ext.gif" class="absolute w-11/12">
 </div>
 
 <!--
