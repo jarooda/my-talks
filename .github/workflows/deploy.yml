@@ -48,6 +48,12 @@ jobs:
           mkdir -p dist
           for slide in $(ls slides); do
             pnpm --filter "./slides/$slide" run build --base "/$slide" -o "../../dist/$slide"
+            echo "Successfully built $slide"
+
+            # Create 404.html for github 404 redirection
+            echo "<!DOCTYPE html><html lang="en"><head><meta http-equiv=\"refresh\" content=\"0; url='/$slide'\" /></head><body><p>Redirecting to <a href=\"/$slide\">/$slide</a>...</p></body></html>" > "dist/$slide/404.html"
+            cat "dist/$slide/404.html"
+            echo "Successfully created 404.html for $slide"
           done
 
       - name: Upload artifact for GitHub Pages
