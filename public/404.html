@@ -1,9 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="refresh" content="0; url='https://jaluwibowo.id/talks'" />
-  </head>
-  <body>
-    <p>Redirecting to <a href="https://jaluwibowo.id/talks">My Talks</a>...</p>
-  </body>
+
+<head>
+  <script>
+    const path = window.location.pathname;
+    // Regex to check if the path ends with '/<number>'
+    const match = path.match(/^(.*\/talks-\d+)\/\d+\/?$/);
+
+    if (match) {
+      window.location.href = match[1];
+    } else {
+      window.location.href = 'https://jaluwibowo.id/talks';
+    }
+  </script>
+  <title>Redirecting...</title>
+</head>
+
+<body>
+  <p>Redirecting... If not redirected, click <a href="https://jaluwibowo.id/talks">here</a>.</p>
+</body>
+
 </html>
