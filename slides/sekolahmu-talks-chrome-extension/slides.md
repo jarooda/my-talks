@@ -210,7 +210,7 @@ layout: center
 
 ---
 layout: image
-image: /under-the-hood.jpg
+image: under-the-hood.jpg
 backgroundSize: contain
 ---
 
