@@ -50,16 +50,8 @@ jobs:
           for slide in $(ls slides); do
             pnpm --filter "./slides/$slide" run build --base "/$slide" -o "../../dist/$slide"
 
-            # Create 404.html for redirection
-            echo '<!DOCTYPE html>' > "dist/$slide/404.html"
-            echo '<html lang="en">' >> "dist/$slide/404.html"
-            echo '<head>' >> "dist/$slide/404.html"
-            echo "  <meta http-equiv=\"refresh\" content=\"0; url='/$slide'\" />" >> "dist/$slide/404.html"
-            echo '</head>' >> "dist/$slide/404.html"
-            echo '<body>' >> "dist/$slide/404.html"
-            echo "  <p>Redirecting to <a href=\"/$slide\">/$slide</a>...</p>" >> "dist/$slide/404.html"
-            echo '</body>' >> "dist/$slide/404.html"
-            echo '</html>' >> "dist/$slide/404.html"
+            # Create 404.html for github 404 redirection
+            echo "<!DOCTYPE html><html lang="en"><head><meta http-equiv=\"refresh\" content=\"0; url='/$slide'\" /></head><body><p>Redirecting to <a href=\"/$slide\">/$slide</a>...</p></body></html>" > "dist/$slide/404.html"
           done
 
       - name: Upload artifact for GitHub Pages
