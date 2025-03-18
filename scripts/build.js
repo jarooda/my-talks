@@ -21,4 +21,24 @@ slides.forEach((slide) => {
       stdio: "inherit"
     }
   )
+
+  // add 404.html to the root of slide directory
+  // and add a redirect to the slide
+  // example /talks/1 will redirect to /talks
+
+  const slideDistPath = path.join(distDir, slide)
+  const redirectHTML = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta http-equiv="refresh" content="0; url='/${repoName}/${slide}'" />
+    </head>
+    <body>
+      <p>Redirecting to <a href="/${repoName}/${slide}">/${repoName}/${slide}</a>...</p>
+    </body>
+    </html>
+  `
+
+  fs.writeFileSync(path.join(slideDistPath, "404.html"), redirectHTML)
+  console.log(`Added 404.html for ${slide}`)
 })
