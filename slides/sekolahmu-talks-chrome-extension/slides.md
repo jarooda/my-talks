@@ -486,8 +486,10 @@ Let's Play Around with Browser Extensions!
 
 <!--
 1. Creating simple extension to change the cursor when visiting sekolah.mu
-2. take a look at pndek.in extension
-3. Create extension that boost productivity with chatgpt, and trying to deploy at chrome webstore
+
+Explain that extension is operating on different context, it needs web_accessible_resources to let site known the asset
+
+2. Create extension that boost productivity with chatgpt, and trying to deploy at chrome webstore
 -->
 
 ---
@@ -528,7 +530,7 @@ Dari kasus ini, kita bisa belajar bahwa browser extensions memiliki potensi risi
 - Beberapa extension dapat melacak aktivitas browsing, merekam ketikan keyboard, atau mengirimkan data ke server eksternal.
 - Sebelum menginstal extension, pastikan membaca kebijakan privasi dan izin yang diminta.
 
-Namun, kita juga tidak perlu terlalu khawatir. Untuk mempublikasikan extension di Chrome Web Store, Google menerapkan beberapa lapisan peninjauan, mulai dari pemeriksaan otomatis hingga manual, termasuk analisis kode dalam beberapa kasus. Ini membantu meminimalkan kemungkinan extension berbahaya masuk ke store.
+Namun, kita juga tidak perlu terlalu khawatir. Untuk menginstall extension di Chrome Web Store, Google menerapkan beberapa lapisan peninjauan, mulai dari pemeriksaan otomatis hingga manual, termasuk analisis kode dalam beberapa kasus. Ini membantu meminimalkan kemungkinan extension berbahaya masuk ke store.
 
 Meskipun begitu, tetap penting bagi kita sebagai pengguna untuk selalu waspada dan hanya menginstal extension dari sumber yang terpercaya.
 
